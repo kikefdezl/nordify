@@ -1,0 +1,11 @@
+[project]
+name = "nordify"
+version = "0.1.0"
+description = "Convert your images to the Nord pallette without artifacts"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "image-go-nord>=1.2.0",
+    "numpy>=2.4.1",
+    "scikit-image>=0.26.0",
+]
