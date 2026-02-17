@@ -4,7 +4,7 @@ import argparse
 import numpy as np
 from PIL import Image, PngImagePlugin
 
-PngImagePlugin.MAX_TEXT_CHUNK = 100 * 1024 * 1024  # 100 MB
+PngImagePlugin.MAX_TEXT_CHUNK = 100 * 1024 * 1024  # 100 MB  # type: ignore
 
 # Original Nord palette (16 colors)
 NORD_PALETTE = [
