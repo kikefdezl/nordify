@@ -33,7 +33,6 @@ All other available tools I tried either got the colors wrong, or produced dot-a
 </tr>
 </table>
 
-
 ## How to Use
 
 I recommend to use the `uv` package manager. Then just clone the repo and run the python script on your image:
@@ -47,8 +46,19 @@ uv run main.py input.png output.png
 ```
 
 I recommend default options since they work very well, but you can experiment with other options:
+
 ```commandline
 --no-expand               Use only original 16 Nord colors
 --expansion-factor (num)  Number of interpolated colors (default: 3)
 --rgb-distance            Use RGB distance instead of perceptual LAB
+```
+
+---
+
+## Development
+
+Run tests:
+
+```bash
+uv run pytest test.py
 ```
